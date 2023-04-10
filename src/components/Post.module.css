@@ -1,0 +1,130 @@
+.post {
+    background-color: rgb(41, 41, 41);
+    border-radius: 8px;
+    padding: 2.5rem;
+}
+
+.post + .post {
+    margin-top: 2rem;
+}
+
+.content{
+    line-height: 1.6rem;
+    color: rgb(121, 121, 121);
+    margin-top: 1.5rem;
+}
+
+.content p {
+    margin-top: 1rem;
+}
+
+.content a {
+    font-weight: bold;
+    color: #00b37e;
+    text-decoration: none;
+}
+
+.content a:hover {
+    color: #09e0a0;
+}
+
+.post > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post > header time {
+    font-size: 0.875rem;
+    color: rgb(121, 121, 121);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author img {
+    box-sizing: initial;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 8px;
+    border-radius: 4px solid rgb(54, 54, 54) ;
+    margin-top: -2rem;
+    outline: 2px solid  #00b37e;
+}
+
+.authorInfo strong {
+    display: block;
+    color: rgb(121, 121, 121);
+    line-height: 1.6rem;
+}
+
+.authorInfo span {
+    display: block;
+    font-size: 0.875rem;
+    color: rgb(121, 121, 121);
+    line-height: 1.6rem;
+}
+
+.commentForm {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top:rgb(121, 121, 121);
+}
+
+.commentForm > strong {
+    line-height: 1.6;
+    color: rgb(121, 121, 121);
+
+}
+
+.commentForm textarea {
+    width: 100%;
+    background: rgb(12, 11, 11);
+    border: 0;
+    resize: none;
+    height: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: rgb(121, 121, 121);
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+.commentForm footer{
+    visibility: hidden;
+    max-height: 0;
+}
+
+.commentForm:focus-within footer{
+    visibility: visible;
+    max-height: none;
+}
+
+.commentForm button[type=submit] {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 0;
+    background: #00b37e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: backgroud-color 0.1s;
+}
+
+.commentForm button[type=submit]:not(:disabled):hover{
+    background: #09e0a0;
+}
+
+.commentForm button[type=submit]:disabled{
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.commentList {
+    margin-top: 2rem;
+    
+}
